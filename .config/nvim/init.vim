@@ -13,6 +13,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 
+Plug 'godlygeek/tabular'
+
 
 " IMPORTANT: :help Ncm2PopupOpen for more information
 set completeopt=noinsert,menuone,noselect
