@@ -14,6 +14,7 @@ Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 
 Plug 'godlygeek/tabular'
+Plug 'ntpeters/vim-better-whitespace'
 
 
 " IMPORTANT: :help Ncm2PopupOpen for more information
@@ -93,26 +94,14 @@ set splitright
 "no bells whatsoever
 set vb t_vb=
 
-" Set tabstop to tell vim how many columns a tab counts for
-set tabstop=2
-
-" set to the same as tabstop (see #4 in :help tabstop)
-set shiftwidth=2
-
-" if it looks like a tab, we can delete it like a tab
-set softtabstop=2
-
-" no tabs! spaces only..
-set expandtab
-
-" < and > will hit indentation levels instead of always -4/+4
-set shiftround
-
-" new line has indentation equal to previous line
-set autoindent
-
-" braces affect autoindentation
-set smartindent
+set tabstop=2      " Set tabstop to tell vim how many columns a tab counts for
+set shiftwidth=2   " set to the same as tabstop (see #4 in :help tabstop)
+set softtabstop=2  " if it looks like a tab, we can delete it like a tab
+set expandtab      " no tabs! spaces only..
+set shiftround     " < and > will hit indentation levels instead of always -4/+4
+set autoindent     " new line has indentation equal to previous line
+set smartindent    " braces affect autoindentation
+set copyindent     " copy indent from the previous line
 
 let mapleader = ","
 

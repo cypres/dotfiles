@@ -8,4 +8,5 @@ alias vi="nvim"
 alias vim="nvim"
 alias k="kubectl"
 alias t="terraform"
+alias t11='/usr/local/opt/terraform@0.11/bin/terraform'
 alias config='/usr/bin/git --git-dir=$HOME/code/dotfiles/ --work-tree=$HOME'
