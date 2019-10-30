@@ -12,6 +12,7 @@ Plug 'airblade/vim-gitgutter'
 
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
+Plug 'hashivim/vim-terraform'
 
 Plug 'godlygeek/tabular'
 Plug 'ntpeters/vim-better-whitespace'
@@ -47,6 +48,7 @@ let g:LanguageClient_serverCommands = {
   \ 'go': ['gopls'],
   \ 'python': ['pyls'],
   \ 'cpp': ['/usr/local/Cellar/llvm/8.0.0/bin/clangd'],
+  \ 'tf': ['terraform-lsp'],
   \ }
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
@@ -62,6 +64,28 @@ autocmd BufEnter * call ncm2#enable_for_buffer()
 autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
 
 let g:python3_host_prog="/usr/local/bin/python3"
+
+" Temporary Files {{{
+    " Store temporarily files globally instead of in working directory
+    set backupdir=~/.config/nvim/backup
+    if !isdirectory(expand(&backupdir))
+      call mkdir(expand(&backupdir), "p")
+    endif
+    set directory=~/.vim/tmp/swap
+    if !isdirectory(expand(&directory))
+      call mkdir(expand(&directory), "p")
+    endif
+    if has('persistent_undo')
+      set undodir=~/.config/nvim/undodir
+      if !isdirectory(expand(&undodir))
+        call mkdir(expand(&undodir), "p")
+      endif
+    endif
+" }}}
+"
+set undofile                    " Persist undo tree across launches
+set undolevels=1000             " Maximum number of changes that can be undone
+set undoreload=10000            " Maximum number lines to save for undo on a buffer reload
 
 " everything needs to be unicode. EVERYTHING
 set encoding=utf-8
