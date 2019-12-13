@@ -2,6 +2,7 @@ set -x PATH /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin /us
 set -x LC_ALL en_US.UTF-8
 set -x LANG en_US.UTF-8
 set -x EDITOR nvim
+set -x GOPRIVATE *.cds.internal.unity3d.com
 eval (pyenv init - | source)
 alias v="nvim"
 alias vi="nvim"
