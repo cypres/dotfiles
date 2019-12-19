@@ -1,0 +1,13 @@
+# This is Git's per-user configuration file.
+[user]
+  name = Hans Duedal
+  email = hans.duedal@unity3d.com
+[url "git@github.com:"]
+  insteadOf = https://github.com/
+[url "git@github.cds.internal.unity3d.com:"]
+  insteadOf = https://github.cds.internal.unity3d.com/
+[filter "lfs"]
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
