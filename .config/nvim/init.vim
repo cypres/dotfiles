@@ -63,7 +63,7 @@ autocmd BufEnter * call ncm2#enable_for_buffer()
 " Run gofmt and goimports on save
 autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
 
-let g:python3_host_prog="/usr/local/bin/python3"
+let g:python3_host_prog="/usr/bin/python3"
 
 " Temporary Files {{{
     " Store temporarily files globally instead of in working directory
@@ -136,6 +136,7 @@ hi link EasyMotionTarget2First Identifier
 hi link EasyMotionTarget2Second Identifier
 
 " Colors
+set termguicolors
 set background=dark
 "set background=light
 colorscheme NeoSolarized
@@ -143,9 +144,9 @@ colorscheme NeoSolarized
 let g:gitgutter_override_sign_column_highlight = 0
 
 " Use ctrl-[hjkl] to select the active split!
-nmap <silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-j> :wincmd j<CR>
-nmap <silent> <c-h> :wincmd h<CR>
-nmap <silent> <c-l> :wincmd l<CR>
+nmap <silent> <C-k> :wincmd k<CR>
+nmap <silent> <C-j> :wincmd j<CR>
+nmap <silent> <C-h> :wincmd h<CR>
+nmap <silent> <C-l> :wincmd l<CR>
 
 map <C-n> :NERDTreeToggle<CR>

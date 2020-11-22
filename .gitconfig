@@ -1,7 +1,8 @@
 # This is Git's per-user configuration file.
 [user]
   name = Hans Duedal
-  email = hans.duedal@unity3d.com
+  email = hans.duedal@gmail.com
+  signingkey = 1D10D6CBD9DD27A3F48307FDCF6B4D774721EC5F
 [url "git@github.com:"]
   insteadOf = https://github.com/
 [url "git@github.cds.internal.unity3d.com:"]
@@ -11,3 +12,17 @@
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
+[init]
+  defaultBranch = main
+[pull]
+  rebase = true
+[rerere]
+  enabled = 1
+[merge]
+  conflictstyle = diff3
+[rebase]
+  autostash = true
+[alias]
+  co = !git checkout $(basename $(git symbolic-ref refs/remotes/origin/HEAD))
+[commit]
+  gpgsign = true
