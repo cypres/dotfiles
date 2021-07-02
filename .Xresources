@@ -6,6 +6,7 @@ XTerm*faceSize: 10
 XTerm*reverseVideo: false
 XTerm*locale: false
 XTerm*termName: xterm-256color
+XTerm*saveLines: 100000
 ! XTerm*ttyModes: erase ^? 
 
 ! These might also be useful depending on your monitor and personal preference:
