@@ -21,6 +21,21 @@ return {
 		}
 	},
 	{
+		'phaazon/hop.nvim',
+		branch = 'v2',
+		config = function()
+			local hop = require('hop')
+			local directions = require('hop.hint').HintDirection
+			hop.setup {}
+			vim.keymap.set('', '<leader>f', function()
+				hop.hint_words({ direction = directions.AFTER_CURSOR })
+			end, { remap = true, desc = '[f] Hop forward' })
+			vim.keymap.set('', '<leader>F', function()
+				hop.hint_words({ direction = directions.BEFORE_CURSOR })
+			end, { remap = true, desc = '[F] Hop backward' })
+		end
+	},
+	{
 		'nvim-neo-tree/neo-tree.nvim',
 		branch = "v2.x",
 		dependencies = {
