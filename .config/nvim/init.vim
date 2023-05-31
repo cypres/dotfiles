@@ -17,6 +17,7 @@ Plug 'hashivim/vim-terraform'
 Plug 'godlygeek/tabular'
 Plug 'ntpeters/vim-better-whitespace'
 
+Plug 'google/vim-jsonnet'
 
 " IMPORTANT: :help Ncm2PopupOpen for more information
 set completeopt=noinsert,menuone,noselect

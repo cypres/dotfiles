@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
-  name = Hans Duedal
-  email = hans.duedal@gmail.com
+  name = Hans Arnholm
+  email = hans@arnholm.dk
   signingkey = 1D10D6CBD9DD27A3F48307FDCF6B4D774721EC5F
 [url "git@github.com:"]
   insteadOf = https://github.com/
@@ -16,6 +16,8 @@
   defaultBranch = main
 [pull]
   rebase = true
+[push]
+  autoSetupRemote = true
 [rerere]
   enabled = 1
 [merge]
