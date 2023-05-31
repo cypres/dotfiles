@@ -15,11 +15,10 @@ return {
 		end,
 	},
 	{
-		require('onedark').setup {
-			-- toggle_style_list = { 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light' }, -- List of styles to toggle between
-			toggle_style_list = { 'dark', 'light' }, -- List of styles to toggle between
-			toggle_style_key = '<space>ts',
-		},
+		require('NeoSolarized').setup {
+			style = "dark", -- "dark" or "light"
+			transparent = false, -- true/false; Enable this to disable setting the background color
+		}
 	},
 	{
 		'nvim-neo-tree/neo-tree.nvim',

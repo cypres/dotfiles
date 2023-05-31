@@ -1,7 +1,7 @@
 Xft.dpi: 192
 
 XTerm*renderFont: true
-XTerm*faceName: Hack
+XTerm*faceName: Hack Nerd Font Mono
 XTerm*faceSize: 10
 XTerm*reverseVideo: false
 XTerm*locale: false
