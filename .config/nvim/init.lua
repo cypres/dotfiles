@@ -429,6 +429,7 @@ local servers = {
   gopls = {
     gofumpt = true
   },
+  jsonnet_ls = {},
   -- pyright = {},
   -- rust_analyzer = {},
   -- tsserver = {},
