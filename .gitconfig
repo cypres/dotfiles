@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
   name = Hans Arnholm
-  email = hans@arnholm.dk
+  email = hans@arnholm.com
   signingkey = 1D10D6CBD9DD27A3F48307FDCF6B4D774721EC5F
 [url "git@github.com:"]
   insteadOf = https://github.com/

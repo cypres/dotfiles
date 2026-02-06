@@ -432,6 +432,7 @@ local servers = {
     gofumpt = true
   },
   jsonnet_ls = {},
+  terraformls = {},
   -- pyright = {},
   -- rust_analyzer = {},
   -- tsserver = {},
@@ -442,6 +443,7 @@ local servers = {
       telemetry = { enable = false },
     },
   },
+  kcl = {},
 }
 
 -- Setup neovim lua configuration
